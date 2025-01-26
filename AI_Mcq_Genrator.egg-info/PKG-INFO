@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: AI-Mcq-Genrator
+Version: 0.0.1
+Author: dhruv tambekar
+Author-email: d.tambekar24@gmail.com
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: streamlit
+Requires-Dist: python-dotenv
+Requires-Dist: PyPDF2
