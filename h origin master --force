@@ -1,0 +1,210 @@
+[33mcommit 8f6bcf9ee2e2e5de327d6701553767c09eb01757[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: DhruvTambekar24 <d.tambekar24@gmail.com>
+Date:   Sun Jan 26 22:31:51 2025 +0530
+
+    complete implementation on notebook
+
+[1mdiff --git a/data.txt b/data.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..debe635[m
+[1m--- /dev/null[m
+[1m+++ b/data.txt[m
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32mMachine learning (ML) is a branch of artificial intelligence (AI) focused on enabling computers and machines to imitate the way that humans learn, to perform tasks autonomously, and to improve their performance and accuracy through experience and exposure to more data.[m
+[32m+[m
+[32m+[m[32mUC Berkeleybreaks out the learning system of a machine learning algorithm into three main parts.[m
+[32m+[m
+[32m+[m[32mA Decision Process: In general, machine learning algorithms are used to make a prediction or classification. Based on some input data, which can be labeled or unlabeled, your algorithm will produce an estimate about a pattern in the data.[m
+[32m+[m
+[32m+[m[32mAn Error Function: An error function evaluates the prediction of the model. If there are known examples, an error function can make a comparison to assess the accuracy of the model.[m
+[32m+[m
+[32m+[m[32mA Model Optimization Process: If the model can fit better to the data points in the training set, then weights are adjusted to reduce the discrepancy between the known example and the model estimate. The algorithm will repeat this iterative “evaluate and optimize” process, updating weights autonomously until a threshold of accuracy has been met.[m
+[32m+[m[32mIndustry newsletter[m
+[32m+[m
+[32m+[m[32mThe latest AI trends, brought to you by experts[m
+[32m+[m[32mGet curated insights on the most important—and intriguing—AI news. Subscribe to our weekly Think newsletter.[m
+[32m+[m
+[32m+[m[32mBusiness email[m
+[32m+[m[32mjohndoe@yourdomain.com[m
+[32m+[m[32mSubscribe[m
+[32m+[m
+[32m+[m[32mMachine learning versus deep learning versus neural networks[m
+[32m+[m[32mSince deep learning and machine learning tend to be used interchangeably, it’s worth noting the nuances between the two. Machine learning, deep learning, and neural networks are all sub-fields of artificial intelligence. However, neural networks is actually a sub-field of machine learning, and deep learning is a sub-field of neural networks.[m
+[32m+[m
+[32m+[m[32mThe way in which deep learning and machine learning differ is in how each algorithm learns. "Deep" machine learning can use labeled datasets, also known as supervised learning, to inform its algorithm, but it doesn’t necessarily require a labeled dataset. The deep learning process can ingest unstructured data in its raw form (e.g., text or images), and it can automatically determine the set of features which distinguish different categories of data from one another. This eliminates some of the human intervention required and enables the use of large amounts of data. You can think of deep learning as "scalable machine learning" as Lex Fridman notes in this MIT lecture1.[m
+[32m+[m
+[32m+[m[32mClassical, or "non-deep," machine learning is more dependent on human intervention to learn. Human experts determine the set of features to understand the differences between data inputs, usually requiring more structured data to learn.[m
+[32m+[m
+[32m+[m[32mNeural networks, or artificial neural networks (ANNs), are comprised of node layers, containing an input layer, one or more hidden layers, and an output layer. Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network by that node. The “deep” in deep learning is just referring to the number of layers in a neural network. A neural network that consists of more than three layers—which would be inclusive of the input and the output—can be considered a deep learning algorithm or a deep neural network. A neural network that only has three layers is just a basic neural network.[m
+[32m+[m
+[32m+[m[32mDeep learning and neural networks are credited with accelerating progress in areas such as computer vision, natural language processing, and speech recognition.[m
+[1mdiff --git a/experiment/machinelearning.csv b/experiment/machinelearning.csv[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b13789[m
+[1m--- /dev/null[m
+[1m+++ b/experiment/machinelearning.csv[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m
+
+[33mcommit cff88035da89075de47b8a81759a595782c27db5[m
+Author: DhruvTambekar24 <d.tambekar24@gmail.com>
+Date:   Sun Jan 26 19:23:01 2025 +0530
+
+    file updated
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex 8fa5b33..3301cf2 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -1 +1,2 @@[m
+[31m-env[m
+\ No newline at end of file[m
+[32m+[m[32menv[m
+[32m+[m[32m.env[m
+
+[33mcommit fdfed037b3be3da279222504083482a67341c087[m
+Author: DhruvTambekar24 <d.tambekar24@gmail.com>
+Date:   Sun Jan 26 18:20:05 2025 +0530
+
+    meta data folder added
+
+[1mdiff --git a/AI_Mcq_Genrator.egg-info/PKG-INFO b/AI_Mcq_Genrator.egg-info/PKG-INFO[m
+[1mnew file mode 100644[m
+[1mindex 0000000..83e1175[m
+[1m--- /dev/null[m
+[1m+++ b/AI_Mcq_Genrator.egg-info/PKG-INFO[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32mMetadata-Version: 2.1[m
+[32m+[m[32mName: AI-Mcq-Genrator[m
+[32m+[m[32mVersion: 0.0.1[m
+[32m+[m[32mAuthor: dhruv tambekar[m
+[32m+[m[32mAuthor-email: d.tambekar24@gmail.com[m
+[32m+[m[32mRequires-Dist: openai[m
+[32m+[m[32mRequires-Dist: langchain[m
+[32m+[m[32mRequires-Dist: streamlit[m
+[32m+[m[32mRequires-Dist: python-dotenv[m
+[32m+[m[32mRequires-Dist: PyPDF2[m
+[1mdiff --git a/AI_Mcq_Genrator.egg-info/SOURCES.txt b/AI_Mcq_Genrator.egg-info/SOURCES.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5b5f33f[m
+[1m--- /dev/null[m
+[1m+++ b/AI_Mcq_Genrator.egg-info/SOURCES.txt[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mREADME.md[m
+[32m+[m[32msetup.py[m
+[32m+[m[32mAI_Mcq_Genrator.egg-info/PKG-INFO[m
+[32m+[m[32mAI_Mcq_Genrator.egg-info/SOURCES.txt[m
+[32m+[m[32mAI_Mcq_Genrator.egg-info/dependency_links.txt[m
+[32m+[m[32mAI_Mcq_Genrator.egg-info/requires.txt[m
+[32m+[m[32mAI_Mcq_Genrator.egg-info/top_level.txt[m
+[32m+[m[32msrc/__init__.py[m
+[32m+[m[32msrc/mcqgenerator/__init__.py[m
+\ No newline at end of file[m
+[1mdiff --git a/AI_Mcq_Genrator.egg-info/dependency_links.txt b/AI_Mcq_Genrator.egg-info/dependency_links.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b13789[m
+[1m--- /dev/null[m
+[1m+++ b/AI_Mcq_Genrator.egg-info/dependency_links.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m
+[1mdiff --git a/AI_Mcq_Genrator.egg-info/requires.txt b/AI_Mcq_Genrator.egg-info/requires.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1fea858[m
+[1m--- /dev/null[m
+[1m+++ b/AI_Mcq_Genrator.egg-info/requires.txt[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32mopenai[m
+[32m+[m[32mlangchain[m
+[32m+[m[32mstreamlit[m
+[32m+[m[32mpython-dotenv[m
+[32m+[m[32mPyPDF2[m
+[1mdiff --git a/AI_Mcq_Genrator.egg-info/top_level.txt b/AI_Mcq_Genrator.egg-info/top_level.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..85de9cf[m
+[1m--- /dev/null[m
+[1m+++ b/AI_Mcq_Genrator.egg-info/top_level.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32msrc[m
+[1mdiff --git a/requirements.txt b/requirements.txt[m
+[1mindex 9add09b..40e0b6a 100644[m
+[1m--- a/requirements.txt[m
+[1m+++ b/requirements.txt[m
+[36m@@ -2,4 +2,6 @@[m [mopenai[m
+ langchain[m
+ streamlit[m
+ python-dotenv[m
+[31m-PyPDF2[m
+\ No newline at end of file[m
+[32m+[m[32mPyPDF2[m
+[32m+[m
+[32m+[m[32m-e .[m
+\ No newline at end of file[m
+[1mdiff --git a/setup.py b/setup.py[m
+[1mindex e69de29..015a60a 100644[m
+[1m--- a/setup.py[m
+[1m+++ b/setup.py[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32mfrom setuptools import find_packages,setup[m
+[32m+[m
+[32m+[m[32msetup([m
+[32m+[m[32m    name='AI-Mcq-Genrator',[m
+[32m+[m[32m    version='0.0.1',[m
+[32m+[m[32m    author='dhruv tambekar',[m
+[32m+[m[32m    author_email='d.tambekar24@gmail.com',[m
+[32m+[m[32m    install_requires=["openai","langchain","streamlit","python-dotenv","PyPDF2"],[m
+[32m+[m[32m    packages=find_packages()[m
+[32m+[m[32m)[m
+\ No newline at end of file[m
+
+[33mcommit ed23231a972864762d63831381b1d1152150c764[m
+Author: DhruvTambekar24 <d.tambekar24@gmail.com>
+Date:   Sun Jan 26 18:00:06 2025 +0530
+
+    structure updated
+
+[1mdiff --git a/requirements.txt b/requirements.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9add09b[m
+[1m--- /dev/null[m
+[1m+++ b/requirements.txt[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32mopenai[m
+[32m+[m[32mlangchain[m
+[32m+[m[32mstreamlit[m
+[32m+[m[32mpython-dotenv[m
+[32m+[m[32mPyPDF2[m
+\ No newline at end of file[m
+[1mdiff --git a/setup.py b/setup.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/src/__init__.py b/src/__init__.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/src/mcqgenerator/__init__.py b/src/mcqgenerator/__init__.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+
+[33mcommit c2ca29eafce9d7478889ee3083256471fba01818[m
+Author: DhruvTambekar24 <d.tambekar24@gmail.com>
+Date:   Sun Jan 26 17:40:44 2025 +0530
+
+    added gitignore
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8fa5b33[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32menv[m
+\ No newline at end of file[m
+
+[33mcommit 2237c3bf510420e4ff09df5da4cd389206dd19b9[m
+Author: DhruvTambekar24 <d.tambekar24@gmail.com>
+Date:   Sun Jan 26 16:00:51 2025 +0530
+
+    intial commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
