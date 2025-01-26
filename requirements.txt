@@ -3,9 +3,15 @@ langchain
 streamlit
 python-dotenv
 <<<<<<< HEAD
+<<<<<<< HEAD
 PyPDF2
 
 -e .
 =======
 PyPDF2
 >>>>>>> 1a5185e (structure updated)
+=======
+PyPDF2
+
+-e .
+>>>>>>> 32868fe (meta data folder added)
